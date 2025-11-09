@@ -177,7 +177,7 @@ function calculateArea takes in length and width
     return area
 
 function greet takes in name
-    output "Hello, " + name
+    output "Hello, " name "!"
 
 run calculateArea with 5 and 10
 run greet with "Alice"
@@ -287,7 +287,7 @@ close fileHandle
 try
     risky_operation()
 catch error
-    output "An error occurred: " + error
+    output "An error occurred: " error
 finally
     cleanup()
 
@@ -316,7 +316,7 @@ function processData
 // ==================
 
 input userName
-output "Welcome, " + userName
+output "Welcome, " userName
 
 // ==================
 // 14. RECORDS AND OBJECTS
@@ -352,7 +352,7 @@ function findPrimes takes in limit
 // Main program
 input "Enter a number: " into maxValue
 result = run findPrimes with maxValue
-output "Found " + length of result + " prime numbers"
+output "Found {length of result} prime numbers"
 
 for each prime in result
     output prime
