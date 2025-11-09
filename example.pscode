@@ -317,7 +317,7 @@ constant MAX_SIZE = 100
 
 record Student
     string name
-    integer age
+    number age
     array grades
 
 // ==================
