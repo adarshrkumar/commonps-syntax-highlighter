@@ -25,6 +25,9 @@ The extension highlights all Common Pseudocode constructs including:
 
 ## Installation
 
+### From VS Marketplace
+The preferred method of installation is from the VS Code Marketplace. It can be installed [at this link](https://marketplace.visualstudio.com/items?itemName=adarshrkumar.pscode).
+
 ### From VSIX (Local Installation)
 
 1. Package the extension:
