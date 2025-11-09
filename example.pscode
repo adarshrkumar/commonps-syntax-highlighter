@@ -194,18 +194,18 @@ minimum = min(10, 20, 30)
 randomNum = random()
 
 // Trigonometric functions
-sine = sin(angle)
-cosine = cos(angle)
-tangent = tan(angle)
-cosecant = csc(angle)
-secant = sec(angle)
-cotangent = cot(angle)
-arcSine = sin^-1(value)
-arcCosine = cos^-1(value)
-arcTangent = tan^-1(value)
+sine = sin of angle
+cosine = cos of angle
+tangent = tan of angle
+cosecant = csc of angle
+secant = sec of angle
+cotangent = cot of angle
+arcSine = sin^-1 of value
+arcCosine = cos^-1 of value
+arcTangent = tan^-1 of value
 
 // String functions
-len = length(text)
+len = length of text
 trimmed = trim(text)
 parts = split(text, ",")
 joined = join(parts, " ")
