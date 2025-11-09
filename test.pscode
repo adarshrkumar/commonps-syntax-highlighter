@@ -1,0 +1,356 @@
+// ============================================
+// PSCODE SYNTAX HIGHLIGHTER TEST FILE
+// This file demonstrates all supported syntax
+// ============================================
+
+/*
+   Block comments are also supported
+   for multi-line documentation
+fuck yeah
+// ==================
+// 1. COMMENTS
+// ==================
+// This is a single line comment
+/* This is a block comment */
+
+// ==================
+// 2. DATA TYPES
+// ==================
+
+// Numbers
+x = 42
+y = 3.14159
+z = -17.5
+
+// Booleans (case-insensitive)
+flag1 = true
+flag2 = False
+flag3 = TRUE
+
+// Strings
+name = "Hello, World!"
+message = 'Single quotes work too'
+template = `Backtick strings supported`
+multiline = """
+   Triple quoted strings
+   can span multiple lines
+"""
+
+// String formatting
+greeting = "Hello {name}, you have {count} messages"
+
+// Escape characters
+escaped = "Line 1\nLine 2\tTabbed"
+
+// Constants
+value = null
+empty = nothing
+
+// ==================
+// 3. STORAGE TYPES
+// ==================
+number age
+string firstName
+boolean isActive
+array scores
+integer count
+float temperature
+double precision
+
+// ==================
+// 4. OPERATORS
+// ==================
+
+// Arithmetic operators
+sum = a + b
+difference = a - b
+product = a * b
+quotient = a / b
+remainder = a % b
+power = a ^ b
+altPower = a ** b
+
+// Arithmetic (word form)
+mod = a modulus b
+exp = a to the power of b
+rem = remainder after a / b
+
+// Assignment operators
+counter++
+counter--
+x += 5
+y -= 3
+z *= 2
+w /= 4
+m %= 10
+p ^= 2
+
+// Comparison operators (symbols)
+result = a == b
+result = a != b
+result = a < b
+result = a > b
+result = a <= b
+result = a >= b
+
+// Comparison operators (words)
+result = a equals b
+result = a is equal to b
+result = a does not equal b
+result = a is not equal to b
+result = a is greater than b
+result = a is less than b
+result = a is greater than or equal to b
+result = a is less than or equal to b
+result = item is in collection
+result = collection contains item
+
+// Logical operators
+result = a and b
+result = a or b
+result = not a
+result = a AND b
+result = a OR b
+result = NOT a
+result = a && b
+result = a || b
+
+// ==================
+// 5. CONTROL FLOW
+// ==================
+
+// If-Else statements
+if x is greater than 0 then
+    output "Positive"
+elseif x is equal to 0 then
+    output "Zero"
+else
+    output "Negative"
+
+// Switch-Case
+switch day
+    case "Monday":
+        output "Start of week"
+    case "Friday":
+        output "End of week"
+    default:
+        output "Mid week"
+
+// ==================
+// 6. LOOPS
+// ==================
+
+// For loop
+for i from 1 to 10 by 2
+    output i
+
+// For each loop
+for each item in collection
+    process(item)
+
+// While loop
+while count is less than 100
+    count = count + 1
+
+// Do-While/Repeat-Until
+repeat
+    input value
+until value is greater than 0
+
+// Loop control
+for i from 1 to 100
+    if i modulus 2 equals 0 then
+        continue
+    if i is greater than 50 then
+        break
+    output i
+
+// ==================
+// 7. FUNCTIONS
+// ==================
+
+function calculateArea takes in length, width
+    area = length * width
+    return area
+
+function greet takes in name
+    output "Hello, " + name
+
+run calculateArea with 5, 10
+run greet using "Alice"
+
+// ==================
+// 8. BUILT-IN FUNCTIONS
+// ==================
+
+// Math functions
+absolute = abs(-15)
+rounded = round(3.7)
+floored = floor(3.9)
+ceiled = ceil(3.1)
+squareRoot = sqrt(25)
+maximum = max(10, 20, 30)
+minimum = min(10, 20, 30)
+randomNum = random()
+
+// Trigonometric functions
+sine = sin(angle)
+cosine = cos(angle)
+tangent = tan(angle)
+cosecant = csc(angle)
+secant = sec(angle)
+cotangent = cot(angle)
+arcSine = sin^-1(value)
+arcCosine = cos^-1(value)
+arcTangent = tan^-1(value)
+
+// String functions
+len = length(text)
+trimmed = trim(text)
+parts = split(text, ",")
+joined = join(parts, " ")
+position = find(text, "substring")
+sub = substring(text, 0, 5)
+upper = uppercase(text)
+lower = lowercase(text)
+upper2 = to uppercase(text)
+lower2 = to lowercase(text)
+
+// Array functions
+append(array, element)
+remove(array, element)
+insert(array, index, element)
+sort(array)
+push(stack, element)
+pop(stack)
+
+// Type checking
+if is number(value) then
+    output "It's a number"
+if is string(value) then
+    output "It's a string"
+if is boolean(value) then
+    output "It's a boolean"
+if is array(value) then
+    output "It's an array"
+if is integer(value) then
+    output "It's an integer"
+if is float(value) then
+    output "It's a float"
+
+// Type conversion
+numValue = convert to number(stringValue)
+strValue = convert to string(numValue)
+intValue = to integer(floatValue)
+floatValue = to float(intValue)
+
+// ==================
+// 9. ARRAY OPERATIONS
+// ==================
+
+// Sorting
+sort(numbers) in ascending order
+sort(numbers) in descending order
+
+// Ranges
+for i in all the integers between 1 and 100
+    output i
+
+// Indexing
+element = element at index 5 of array
+
+// ==================
+// 10. FILE I/O
+// ==================
+
+open file "data.txt" for reading
+open file "output.txt" for writing
+open file "log.txt" for appending
+
+read line from file
+write data to file
+append record to file
+
+close file
+
+// Check end of file
+repeat
+    read line from file
+until end of file
+
+// ==================
+// 11. EXCEPTION HANDLING
+// ==================
+
+try
+    risky_operation()
+catch error
+    output "An error occurred: " + error
+finally
+    cleanup()
+
+// ==================
+// 12. FLOW CONTROL
+// ==================
+
+function processData
+    if not valid then
+        return
+
+    for each item in data
+        if item is null then
+            skip
+
+        if critical_error then
+            exit
+
+        if should_restart then
+            jump to start
+
+    stop
+
+// ==================
+// 13. INPUT/OUTPUT
+// ==================
+
+input userName
+output "Welcome, " + userName
+
+// ==================
+// 14. RECORDS AND OBJECTS
+// ==================
+
+constant MAX_SIZE = 100
+
+new record Student
+    string name
+    integer age
+    array grades
+
+// ==================
+// 15. COMPLEX EXAMPLE
+// ==================
+
+function findPrimes takes in limit
+    array primes
+
+    for number from 2 to limit
+        boolean isPrime = true
+
+        for divisor from 2 to sqrt(number)
+            if number modulus divisor equals 0 then
+                isPrime = false
+                break
+
+        if isPrime then
+            append(primes, number)
+
+    return primes
+
+// Main program
+input "Enter a number: " into maxValue
+result = run findPrimes with maxValue
+output "Found " + length(result) + " prime numbers"
+
+for each prime in result
+    output prime

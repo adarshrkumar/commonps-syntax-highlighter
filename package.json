@@ -18,7 +18,7 @@
     }],
     "grammars": [{
       "language": "pscode",
-      "scopeName": "keyword.control.n",
+      "scopeName": "source.pscode",
       "path": "./syntaxes/pscode.tmLanguage.json"
     }]
   }
