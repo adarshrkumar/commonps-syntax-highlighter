@@ -295,17 +295,17 @@ finally
 // ==================
 
 function processData
-    if not valid then
+    if not valid
         return
 
     for each item in data
-        if item is null then
+        if item is null
             skip
 
-        if critical_error then
+        if critical_error
             exit
 
-        if should_restart then
+        if should_restart
             jump to start
 
     stop
@@ -339,11 +339,11 @@ function findPrimes takes in limit
         boolean isPrime = true
 
         for divisor from 2 to sqrt(number)
-            if number modulus divisor equals 0 then
+            if number modulus divisor equals 0
                 isPrime = false
                 break
 
-        if isPrime then
+        if isPrime
             append(primes, number)
 
     return primes
