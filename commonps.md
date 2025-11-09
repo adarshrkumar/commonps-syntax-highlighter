@@ -2,9 +2,9 @@
 
 ## General notes
 
-This "language" works like JavaScript where each new line is considered a statement with an implicit "semicolon" (which we don't have in Pseuocode) at the end of each line.
+This "language" works like JavaScript, where each new line is treated as a statement with an implicit "semicolon" (which we don't have in Pseudocode) at the end of each line.
 
-Identation is done python style but without the need for the `:` at the end of the parent "statement".
+Indentation is done Python style, but without the need for the `:` at the end of the parent "statement".
 
 ## Code format
 
@@ -13,7 +13,7 @@ Identation is done python style but without the need for the `:` at the end of t
 Single line comment:
 
 ```pscode
-// This is a single line comment
+// This is a single-line comment
 x = 5  // This is an inline comment
 ```
 
@@ -185,7 +185,7 @@ else
     output "hi not 5 or 7"
 ```
 
-Check if `currentNumber` is greater than to `5`:
+Check if `currentNumber` is greater than `5`:
 
 ```pscode
 if currentNumber is greater than 5
@@ -199,7 +199,7 @@ if currentNumber is less than or equal to 7
     output "hi 7"
 ```
 
-Take a users input for a desired menu option and check for each case and print out that number (switch):
+Take a user's input for a desired menu option, check for each case, and print out that number (switch):
 
 ```pscode
 /*
@@ -299,7 +299,7 @@ until password == "secret"
 
 ### Loop Control
 
-Break out of loop early:
+Break out of the loop early:
 
 ```pscode
 for i from 1 to 100
@@ -352,7 +352,7 @@ Array length:
 count = length of numbers  // or count = numbers.length
 ```
 
-Add element to end of array:
+Add an element to the end of an array:
 
 ```pscode
 append 6 to numbers  // or numbers.append(6) or numbers.push(6)
@@ -361,13 +361,13 @@ append 6 to numbers  // or numbers.append(6) or numbers.push(6)
 Remove element from array:
 
 ```pscode
-remove element at index 2 from numbers  // or numbers.remove(2)
+remove element at index `2` from numbers  // or numbers.remove(2)
 ```
 
 Insert element at specific position:
 
 ```pscode
-insert "pear" at index 1 in fruits  // or fruits.insert(1, "pear")
+insert "pear" at index `1` in fruits  // or fruits.insert(1, "pear")
 ```
 
 Check if element exists in array:
