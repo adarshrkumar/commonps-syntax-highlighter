@@ -264,20 +264,19 @@ element = element at index 5 of array
 // 10. FILE I/O
 // ==================
 
-open file "data.txt" for reading
-open file "output.txt" for writing
-open file "log.txt" for appending
+open file "data.txt" for reading as fileHandle
+while not end of fileHandle
+    line = read line from fileHandle
+    output line
+close fileHandle
 
-read line from file
-write data to file
-append record to file
+open file "output.txt" for writing as fileHandle
+write "Hello, World!" to fileHandle
+close fileHandle
 
-close file
-
-// Check end of file
-repeat
-    read line from file
-until end of file
+open file "log.txt" for appending as fileHandle
+write "New log entry" to fileHandle
+close fileHandle
 
 // ==================
 // 11. EXCEPTION HANDLING
