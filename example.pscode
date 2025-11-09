@@ -121,9 +121,9 @@ result = a || b
 // ==================
 
 // If-Else statements
-if x is greater than 0 then
+if x is greater than 0
     output "Positive"
-elseif x is equal to 0 then
+elseif x is equal to 0
     output "Zero"
 else
     output "Negative"
@@ -160,9 +160,9 @@ until value is greater than 0
 
 // Loop control
 for i from 1 to 100
-    if i modulus 2 equals 0 then
+    if i modulus 2 equals 0
         continue
-    if i is greater than 50 then
+    if i is greater than 50
         break
     output i
 
@@ -226,17 +226,17 @@ push(stack, element)
 pop(stack)
 
 // Type checking
-if is number(value) then
+if is number(value)
     output "It's a number"
-if is string(value) then
+if is string(value)
     output "It's a string"
-if is boolean(value) then
+if is boolean(value)
     output "It's a boolean"
-if is array(value) then
+if is array(value)
     output "It's an array"
-if is integer(value) then
+if is integer(value)
     output "It's an integer"
-if is float(value) then
+if is float(value)
     output "It's a float"
 
 // Type conversion
