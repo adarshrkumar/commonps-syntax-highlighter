@@ -2,7 +2,7 @@
   "name": "pscode",
   "displayName": "Common Pseudo Code Syntax Highlighter",
   "description": "Common Pseudo Code",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "publisher": "adarshrkumar",
   "icon": "logo_rounded.png",
   "scripts": {
