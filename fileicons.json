@@ -1,0 +1,13 @@
+{
+  "iconDefinitions": {
+    "commonps": {
+      "iconPath": "./icon.svg"
+    }
+  },
+  "fileExtensions": {
+    "pscode": "commonps",
+    "pcode": "commonps",
+    "pseudo": "commonps",
+    "commonps": "commonps"
+  }
+}

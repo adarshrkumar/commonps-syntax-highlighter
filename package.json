@@ -1,5 +1,5 @@
 {
-  "name": "pscode",
+  "name": "commonps",
   "displayName": "Common Pseudo Code Syntax Highlighter",
   "description": "Common Pseudo Code",
   "version": "0.1.0",
@@ -27,10 +27,10 @@
   "contributes": {
     "languages": [
       {
-        "id": "pscode",
+        "id": "commonps",
         "aliases": [
           "Common Pseudo Code",
-          "pscode"
+          "commonps"
         ],
         "extensions": [
           ".pscode",
@@ -38,14 +38,25 @@
           ".pseudo",
           ".commonps"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icon.svg",
+          "dark": "./icon.svg"
+        }
       }
     ],
     "grammars": [
       {
-        "language": "pscode",
-        "scopeName": "source.pscode",
-        "path": "./syntaxes/pscode.tmLanguage.json"
+        "language": "commonps",
+        "scopeName": "source.commonps",
+        "path": "./syntaxes/commonps.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "commonps-icons",
+        "label": "Common Pseudo Code Icons",
+        "path": "./fileicons.json"
       }
     ]
   }
